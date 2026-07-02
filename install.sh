@@ -1,7 +1,7 @@
 #!/bin/sh
 # Spore α — one-command installer for the `spore` helper (the substrate seam).
 #
-#   curl -fsSL https://raw.githubusercontent.com/neuromance-admin/spore-claudecode-plugin/main/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/neuromance-admin/spore/main/install.sh | sh
 #
 # Downloads the prebuilt binary for your platform from the latest GitHub release,
 # installs it to ~/.spore/bin, and puts that on your PATH. No build tools needed.
@@ -11,7 +11,7 @@
 #   SPORE_BIN_DIR=/path    install location (default: ~/.spore/bin)
 set -eu
 
-REPO="neuromance-admin/spore-claudecode-plugin"
+REPO="neuromance-admin/spore"
 BIN_DIR="${SPORE_BIN_DIR:-$HOME/.spore/bin}"
 VERSION="${SPORE_VERSION:-latest}"
 

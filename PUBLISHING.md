@@ -5,7 +5,7 @@ The one-command installer (`install.sh`) downloads a **prebuilt** `spore` binary
 ## Repo layout this expects
 
 ```
-spore-claudecode-plugin/
+spore/
 ├── .claude-plugin/           ← the Claude Code plugin (slash commands)
 ├── skills/                   ← plugin skills
 ├── spore-helper/             ← the Rust crate (SEAM binary source) — synced from SporeSource
@@ -29,7 +29,7 @@ From the SporeSource workshop, copy both into the plugin repo (excluding build o
 
 ```sh
 SRC=/path/to/SporeSource/build/sporeAlpha-v0.3
-DST=/path/to/spore-claudecode-plugin
+DST=/path/to/spore
 
 rsync -a --delete --exclude target/ "$SRC/spore-helper/" "$DST/spore-helper/"
 cp "$SRC/_sporeAlpha.md" "$DST/_sporeAlpha.md"
@@ -59,7 +59,7 @@ You can also trigger it manually from the **Actions → release → Run workflow
 The one-liner is live:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/neuromance-admin/spore-claudecode-plugin/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/neuromance-admin/spore/main/install.sh | sh
 ```
 
 `install.sh` resolves `releases/latest`, so it always fetches the newest tagged release. Pin a specific one with `SPORE_VERSION=v0.3.0`.

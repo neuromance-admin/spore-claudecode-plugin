@@ -6,10 +6,10 @@
   "author": {
     "name": "NeuromanceCo",
     "email": "halicon@gmail.com",
-    "url": "https://github.com/neuromance-admin/spore-claudecode-plugin"
+    "url": "https://github.com/neuromance-admin/spore"
   },
   "license": "MIT",
-  "repository": "https://github.com/neuromance-admin/spore-claudecode-plugin",
-  "homepage": "https://github.com/neuromance-admin/spore-claudecode-plugin",
+  "repository": "https://github.com/neuromance-admin/spore",
+  "homepage": "https://github.com/neuromance-admin/spore",
   "keywords": ["memory", "obsidian", "markdown", "ai", "harness", "claude-code"]
 }

@@ -1,6 +1,6 @@
-# Spore α plugin (v0.3.0)
+# Spore α
 
-The slash-command UX layer for the **Spore α** runtime — a Markdown-based AI memory harness that runs inside Claude Code. The substrate seam is the self-owned **`spore` helper** (a small local binary); Obsidian is an optional Markdown viewer, not a requirement.
+Markdown-based AI memory harness for Claude Code — locally-owned, plain-text vaults. This repo is the whole distribution: the **`spore` helper** (a small local binary — the substrate seam), the **runtime** (`_sporeAlpha.md`, the doctrine each vault carries), the one-command **installer**, and the **plugin** that surfaces the `/spore:*` slash commands. Obsidian is an optional Markdown viewer, not a requirement.
 
 This plugin provides six namespaced slash commands:
 
@@ -36,7 +36,7 @@ The plugin commands assume the runtime is in context. If it isn't, the commands 
 Two one-time steps. **1 — the `spore` helper** (a prebuilt binary; no build tools needed), in a terminal:
 
 ```
-curl -fsSL https://raw.githubusercontent.com/neuromance-admin/spore-claudecode-plugin/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/neuromance-admin/spore/main/install.sh | sh
 ```
 
 It installs to `~/.spore/bin` and puts it on your PATH. Verify with `spore version`. (Developers can build from source instead — see the `spore-helper/` crate.)
@@ -44,7 +44,7 @@ It installs to `~/.spore/bin` and puts it on your PATH. Verify with `spore versi
 **2 — the plugin** (the `/spore:*` slash commands), inside any Claude Code session:
 
 ```
-/plugin marketplace add neuromance-admin/spore-claudecode-plugin
+/plugin marketplace add neuromance-admin/spore
 /plugin install spore@neuromance-co
 ```
 
