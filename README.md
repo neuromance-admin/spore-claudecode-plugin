@@ -71,7 +71,7 @@ Then create a vault with `spore init ~/path/to/MyVault` and hand the runtime to 
 
 ## See also
 
-- Runtime source: `_sporeAlpha.md` (in any vault you've Spore-ified) — the complete doctrine, ~1155 lines, §1–§13 + Changelog.
+- Runtime source: `_sporeAlpha.md` (in any vault you've Spore-ified) — the complete doctrine, ~1060 lines, §1–§14 + Changelog.
 - Seam binary source: the `spore-binary/` crate in this repo (authored canonically in the upstream `SporeSource` workshop).
 - Design rationale: the upstream `SporeSource` repo.
 

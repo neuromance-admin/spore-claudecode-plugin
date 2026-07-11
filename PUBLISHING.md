@@ -35,15 +35,15 @@ rsync -a --delete --exclude target/ "$SRC/spore-binary/" "$DST/spore-binary/"
 cp "$SRC/_sporeAlpha.md" "$DST/_sporeAlpha.md"
 ```
 
-Commit both. The crate's `Cargo.toml` version (currently `0.5.0`) is what ships.
+Commit both. The crate's `Cargo.toml` version (currently `0.5.1`) is what ships.
 
 ## Cut a release
 
 The tag matches the binary's `Cargo.toml` version (which matches the embedded runtime's `version:`; `minHelper` may lag — it is a compatibility floor, not the release number).
 
 ```sh
-git tag v0.5.0
-git push origin v0.5.0
+git tag v0.5.1
+git push origin v0.5.1
 ```
 
 That fires `.github/workflows/release.yml`, which:
